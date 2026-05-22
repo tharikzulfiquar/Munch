@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Munch - Cart</title>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS\style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    </head>
+	
+	<script src ="js\script.js"></script>
+	
+    <body class="profile-page">
+        <header>
+            <a href="index.html" class="logo">
+                <img src="Images\logo.png" alt="Munch Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+			
+			<div class="header-right">
+				<a href="login.html" class="login-btn">Log in</a>
+				<div class="cart-icon">
+    				<a href="cart.html">
+       				<i class="fas fa-shopping-cart"></i>
+    				</a>
+				</div>
+			</div>    
+        </header>
+		
+		<div class="cart-container">
+        <h2>Your Cart</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <tr>
+                    <td><img src="Images/chicken-burger.png" alt="Burger" class="cart-item-img"></td>
+                    <td>Cheese Burger</td>
+                    <td>$5.99</td>
+                    <td>1</td>
+                    <td>$5.99</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td><img src="Images/chicken-burito.png" alt="Pizza" class="cart-item-img"></td>
+                    <td>Chicken Burito</td>
+                    <td>$12.99</td>
+                    <td>1</td>
+                    <td>$12.99</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td><img src="Images/fries.png" alt="Fries" class="cart-item-img"></td>
+                    <td>French Fries</td>
+                    <td>$3.99</td>
+                    <td>2</td>
+                    <td>$7.98</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h3>Total: $<span id="cart-total">0.00</span></h3>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+   		</div>
+        
+		
+		<footer>
+		<div class="footer">
+			<div class="footer-section">
+				<h3 align="center">Contact Us</h3>
+				<p>Email : contact@munch.com</p>
+				<p>Phone : +94 77 123 4567</p>
+			</div>
+			<div class="footer-section">
+				<h3 align="center">Our Stores</h3>
+				<p>📍 Colombo - 123, Main Street</p>
+				<p>📍 Kandy - 45, Hill Road</p>
+				<p>📍 Galle - 78, Beachside Ave</p>
+			</div>
+			<div class="footer-section">
+				<h3 align="center">Quick Links</h3>
+				<ul>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="profile.html">Profile</a></li>
+				</ul>
+			</div>
+			</div>
+			
+			<p class="footer-credit">© 2025 Munch. All Rights Reserved.</p>
+		</footer>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Munch - Home</title>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS\style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    </head>
+	
+	<script src ="js\script.js"></script>
+	
+    <body>
+        <header>
+            <a href="index.html" class="logo">
+                <img src="Images\logo.png" alt="Munch Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+			
+			<div class="header-right">
+				<a href="login.html" class="login-btn">Log in</a>
+				<div class="cart-icon">
+    				<a href="cart.html">
+       				<i class="fas fa-shopping-cart"></i>
+    				</a>
+				</div>
+			</div>
+            
+        </header>
+	
+	<section class="menu">
+		<h1>Our Menu</h1>
+		<div class="menu-items">
+			<div class="menu-item">
+				<img src="Images/chicken-burger.png" width="200px" height="200px" alt="Chicken Burger">
+				<h2>Classic Chicken Burger</h2>
+				<p>The good old classic chicken. Nothing Extra, Nothing Less. Just the way we all love it!</p>
+				<span>$4.99</span>
+				<button class="ordr-btn" onclick="addToCart('Classic Chicken Burger', 4.99, 'Images/chicken-burger.png')">Add to cart</button>
+			</div>
+			<div class="menu-item">
+				<img src="Images/fries.png" width="200px" height="200px" alt="Fries">
+				<h2>Fries</h2>
+				<p>Want some extra fries? This is what you have been searching for</p>
+				<span>$1.99</span>
+				<button class="ordr-btn" onclick="addToCart('Fries', 1.99, 'Images/fries.png')">Add to cart</button>
+			</div>
+			<div class="menu-item">
+				<img src="Images/chicken-submarine.png" width="200px" height="200px" alt="Chicken Submarine">
+				<h2>Chicken Submarine</h2>
+				<p>Hungry? Well go on! Nobody is gonna judge you.</p>
+				<span>$6.99</span>
+				<button class="ordr-btn" onclick="addToCart('Chicken Submarine', 6.99, 'Images/chicken-submarine.png')">Add to cart</button>
+			</div>
+			<div class="menu-item">
+				<img src="Images/chicken-burito.png" width="200px" height="200px" alt="Chicken Burito">
+				<h2>Chicken Burito</h2>
+				<p>Well it's the same as the others, but in a different way...</p>
+				<span>$5.99</span>
+				<button class="ordr-btn" onclick="addToCart('chicken-burito', 5.99, 'Images/chicken-burito.png')">Add to cart</button>
+			</div>
+			<div class="menu-item">
+				<img src="Images/beef-double-burger.png" width="200px" height="200px" alt="Double Beef Burger">
+				<h2>Double Beef Burger</h2>
+				<p>Fancy a Beef Burger? Why not twice the size inside your mouth!</p>
+				<span>$8.99</span>
+				<button class="ordr-btn" onclick="addToCart('beef-double-burger', 8.99, 'Images/beef-double-burger.png')">Add to cart</button>
+			</div>
+			<div class="menu-item">
+				<img src="Images/Veggie-burger.png" width="200px" height="200px" alt="Veggie Burger">
+				<h2>Veggie Burger</h2>
+				<p>This is for the Vegeterians! Can't forget about yall!</p>
+				<span>$3.99</span>
+				<button class="ordr-btn" onclick="addToCart('Veggie-burger', 3.99, 'Images/Veggie-burger.png')">Add to cart</button>
+			</div>
+			<div class="menu-item">
+				<img src="Images/cola.png" width="200px" height="200px" alt="Cola">
+				<h2>Cola</h2>
+				<p>Thirsty? Your favourite Cola is here to take away your thirst!</p>
+				<span>$2.99</span>
+				<button class="ordr-btn" onclick="addToCart('cola', 2.99, 'Images/cola.png')">Add to cart</button>
+			</div>
+			<div class="menu-item">
+				<img src="Images/chocolate-sundae.png" width="200px" height="200px" alt="Chocolate Sundae">
+				<h2>Chocolate Sundae</h2>
+				<p>The perfect dessert after a meal!</p>
+				<span>$5.49</span>
+				<button class="ordr-btn" onclick="addToCart('chocolate-sundae', 5.49, 'Images/chocolate-sundae.png')">Add to cart</button>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="footer">
+			<div class="footer-section">
+				<h3 align="center">Contact Us</h3>
+				<p>Email : contact@munch.com</p>
+				<p>Phone : +94 77 123 4567</p>
+			</div>
+			<div class="footer-section">
+				<h3 align="center">Our Stores</h3>
+				<p>📍 Colombo - 123, Main Street</p>
+				<p>📍 Kandy - 45, Hill Road</p>
+				<p>📍 Galle - 78, Beachside Ave</p>
+			</div>
+			<div class="footer-section">
+				<h3 align="center">Quick Links</h3>
+				<ul>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="profile.html">Profile</a></li>
+				</ul>
+			</div>
+			</div>
+			
+			<p class="footer-credit">© 2025 Munch. All Rights Reserved.</p>
+		</footer>
+</body>
+</html>
